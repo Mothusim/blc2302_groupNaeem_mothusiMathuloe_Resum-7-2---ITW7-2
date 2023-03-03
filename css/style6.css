@@ -1,5 +1,9 @@
 body {
+    width:100%;
+    height:100%;
+    padding: 0px;
     margin: 0px;
+    overflow-x: hidden;
 }
 
 main {
@@ -17,7 +21,7 @@ header {
 #sub-header {
     display: flex;
     flex-direction: row;
-    justify-content:space-between;
+    justify-content:stretch;
     margin-top: 0px;
 }
 
@@ -28,21 +32,24 @@ footer {
     margin-top: 100px;
 }
 
-.left {
-    width: 20%;
+#left {
+    width: 50%;
     background-color: rgb(116, 170, 203);
-    padding: 20px 80px 20px 80px;
-    margin-bottom: -108px;
-    margin-top: -20px;
+    padding: 20px 80px 0px 80px;
     text-align: center;
+    margin-bottom: -130px;
+    margin-right: 20px;
+    position:relative;
+    bottom: 20px;
 }
 
-.right {
+#right {
+    width:50%;
     background-color: white;
-    margin-bottom: 10px;
-    padding: 0px 10px -10px 0px;
-    margin-left: 30px;
-    margin-right: 500px;
+    margin-bottom: 120px;
+    padding: 0px 0px 10px 0px;
+    margin-left: 0px;
+    margin-right:80px;
 }
 
 img {
@@ -100,22 +107,15 @@ img {
     margin: 10px 15px 10px 0px;
 }
 
-.education-col2 {
+
+.experience {
+    display: flex;
+    flex-direction: row;
+}
+
+.education {
+    display: flex;
+    flex-direction: row;
     position: relative;
-    left: 450px;
-    bottom: 150px;
-}
-
-.experience-col2 {
-    position: relative;
-    left: 450px;
-    bottom: 150px;
-}
-
-.education-col1, .education-col2 {
-    margin-bottom: -110px;
-}
-
-.experience-col1, .experience-col2 {
-    margin-bottom: -110px;
+    bottom: 20px;
 }
