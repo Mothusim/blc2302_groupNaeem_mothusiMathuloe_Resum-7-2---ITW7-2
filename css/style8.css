@@ -1,0 +1,347 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+#wrapper {
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-auto-rows: minmax(100px, auto);
+    max-width: 100%;
+    margin: 0 auto;
+    gap: 1px;
+    background-color: #E0B974;
+    grid-template-areas:
+    "header nav nav nav nav"
+    "header section-one section-one section-one section-one"
+    "header section-two section-two section-two section-two"
+    "footer footer footer footer footer";
+}
+
+#name-div {
+    width: 100%;
+    height: 220px;
+    background-color: rgb(255, 255, 0, 0.2);
+}
+
+#name h1{
+    font-size: 40px;
+    position: relative;
+    bottom: 220px;
+    left: 30px;
+    color: rgb(0, 0, 0);
+    font-weight: bolder;
+}
+
+#name h1:nth-child(1){
+    color: #45B1E8;
+}
+
+
+header {
+    grid-area: header;
+    background-image: url("/images/header-BGI.jpg");
+    background-size:cover;
+    text-align: center;
+}
+
+#header-content {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+}
+
+#name-main-div {
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 0;
+}
+
+picture img {
+    width: 210px;
+    height: 210px;
+    border: 2px solid #E0B974;
+    border-radius: 100%;
+}
+
+nav {
+    grid-area: nav;
+    background-color: #45B1E8;
+    position: -webkit-sticky;
+    position: sticky;
+    top: 0;
+    z-index: 1;
+}
+
+#section-one{
+    grid-area: section-one;
+    background-color: #45B1E8;
+}
+
+#section-two {
+    grid-area: section-two;
+    background-color: #45B1E8;
+    padding: 10px 0 0 10px;
+}
+
+#list {
+    padding: 25px 10px 0 0;
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content:flex-end;
+    background-color: #D7BC74;
+}
+
+ul {
+    list-style: none;
+    position: absolute;
+}
+
+ul li {
+    float: right;
+    font-size: large;
+}
+
+ul li a {
+    width: 100%;
+    color: black;
+    font-weight: bold;
+    display: block;
+    text-decoration: none;
+    padding: 10px 10px;
+}
+
+ul li a:hover {
+    background-color: #9dd0e9;
+    transform: scale(1.1);
+    border-radius: 20%;
+}
+
+fieldset {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    height: 200px;
+    background-color: #45B1E8;
+    padding: 0 10px 10px 10px;
+}
+
+fieldset:nth-child(1) {
+    width: 100%;
+    padding-top: 10px;
+}
+
+
+
+footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    width: 100%;
+    height: 200px;
+    grid-area: footer;
+    background-color: gray;
+    background-image: url(/images/header-BGI.jpg);
+    background-size: cover;
+}
+
+#section-one {
+    padding: 10px;
+}
+
+#education-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.qualification:hover {
+    transform:scale(1.2);
+}
+
+.school {
+    width: 350px;
+    min-height: 175px;
+    background-color: #D7BC74;
+    line-height: 100px;
+    padding: 0 40px;
+    border-radius: 5%;
+    border: 2px solid black;
+}
+
+.qualification {
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+    width: 350px;
+    min-height: 175px;
+    background-color: rgb(187, 182, 182);
+    line-height: 175px;
+    padding: 0 40px;
+    border-radius: 5%;
+    color:rgb(0, 0, 0);
+    border: 2px solid #E8A317;
+}
+
+#experience-section {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 50px;
+}
+
+.responsibility:hover {
+    transform:scale(1.15);
+}
+
+.employer {
+    width: 350px;
+    min-height: 175px;
+    background-color: #D7BC74;
+    line-height: 100px;
+    padding: 0 40px;
+    border-radius: 5%;
+    border: 2px solid black;
+}
+
+.responsibility {
+    position: relative;
+    left: 100px;
+    bottom: 50px;
+    width: 350px;
+    min-height: 175px;
+    background-color: rgb(187, 182, 182);
+    line-height: 175px;
+    padding: 0 40px;
+    border-radius: 5%;
+    color:rgb(0, 0, 0);
+    border: 2px solid #E8A317;
+}
+
+input, select {
+    background-color: #D7BC74;
+    font-weight: bold;
+}
+
+input {
+    padding: 2px;
+}
+
+form {
+    width: 25%;
+}
+
+#contacts {
+    position: relative;
+    right: 25%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    height: 200px;
+    background-color: #45B1E8;
+    padding: 0 10px 10px 10px;
+}
+
+.typo:hover {
+    background-color: #45B1E8;
+    transform: scale(1.1);
+    border-radius: 5%;
+    margin: 10px;
+    padding-left: 30px;
+
+}
+
+#contacts h3:hover {
+    background-color: #D7BC74;
+    transform: scale(1.5);
+    border-radius: 5%;
+    padding: 0 5px;
+    margin: 0 auto;
+}
+
+#section-one h2:hover {
+    width: 11%;
+    display:grid;
+    background-color: #D7BC74;
+    transform: scale(1.5);
+    border-radius: 5%;
+    padding-left: 0.5%;
+    margin: 0 45%;
+}
+
+#section-two h2:hover {
+    width: 11%;
+    display:grid;
+    background-color: #D7BC74;
+    transform: scale(1.5);
+    border-radius: 5%;
+    padding-left: 0.5%;
+    margin: 0 45%;
+}
+
+header h2:hover {
+    display: grid;
+    background-color: #D7BC74;
+    transform: scale(1.1);
+    border-radius: 5%;
+    padding: 2%;
+}
+
+@media only screen and (max-width: 500px) {
+    
+    #wrapper {
+        max-width: 120%;
+        display: grid;
+        grid-template-columns: repeat(1,1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "nav"
+        "header"
+        "section-one"
+        "section-two"
+        "footer";
+    }
+
+    .qualification {
+        left: 50px;
+    }
+
+    .responsibility {
+        left: 50px;
+    }
+}
+
+@media only screen and (max-width: 900px) {
+
+    #wrapper {
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-auto-rows: auto;
+        grid-template-areas: 
+        "nav" "nav"
+        "header" "header"
+        "section-one" "section-one"
+        "section-two" "section-two"
+        "footer" "footer"
+    }
+
+    .qualification {
+        left: 50px;
+    }
+
+    .responsibility {
+        left: 50px;
+    }
+
+    #header-content {
+        position:static;
+    }
+}
